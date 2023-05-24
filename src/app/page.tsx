@@ -6,6 +6,7 @@ export default function Home() {
       <Link href={'/animate'} className='hover:underline'>Animated Homepage</Link>
       <Link href={'/loop'} className='hover:underline'>Continuous loop animation</Link>
       <Link href={'/parallax'} className='hover:underline'>Parallax Background</Link>
+      <Link href={'/framer'} className='hover:underline'>Framer Parallax</Link>
     </main>
   )
 }

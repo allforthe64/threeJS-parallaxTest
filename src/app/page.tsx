@@ -7,6 +7,7 @@ export default function Home() {
       <Link href={'/loop'} className='hover:underline'>Continuous loop animation</Link>
       <Link href={'/parallax'} className='hover:underline'>Parallax Background</Link>
       <Link href={'/framer'} className='hover:underline'>Framer Parallax</Link>
+      <Link href={'/useScrollTut'} className='hover:underline'>Framer useScroll Tutorial</Link>
     </main>
   )
 }

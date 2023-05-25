@@ -1,0 +1,61 @@
+img {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+section {
+    min-height: 100vh;
+}
+
+.scroll-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 100vh auto; 
+    overflow: hidden;
+}
+
+.img-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .copy {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    font-size: 24px;
+    margin-left: 5%;
+    text-align: left;
+  }
+  
+  .copy h2 {
+    font-size: 70px;
+    margin-top: 0;
+  }
+
+  .bottom-shadow {
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 40%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+  }
+  
+  .top-shadow {
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 25%);
+    height: 100%;
+    width: 140%;
+    position: absolute;
+    left: 0%;
+    top: 0;
+    z-index: 2;
+  }

@@ -1,4 +1,5 @@
 import { SlideHeader } from "./components/SlideHeader"
+import Categories from "./components/Categories"
 
 export default function page(){
 
@@ -6,6 +7,7 @@ export default function page(){
     <div>
       <p className='text-white text-2xl font-bold py-20 text-center'>Scroll down</p>
       <SlideHeader />
+      <Categories />
     </div>
   )
 }

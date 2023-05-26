@@ -12,7 +12,7 @@ export const SlideHeader = () => {
       target: containerRef,
       offset: ["start end", "end end"] // get value while the start of the target meets the end of the container, and continue until the end of the target meets the end of the container
     }) //get scrollYProgress value from useScroll hook by tracking the scroll position of the container
-    const imageValue = useTransform(scrollYProgress, [0, 1], ['-150%', '10%'])
+    const imageValue = useTransform(scrollYProgress, [0, 1], ['-170%', '50%'])
     const lineWidth = useTransform(scrollYProgress, [0, 1], ['0%', '100%'])
     const topShadowValue = useTransform(scrollYProgress, [0, 1], ['-25%', '100%'])
     const shouldUseReducedMotion = useReducedMotion()

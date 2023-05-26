@@ -1,10 +1,4 @@
-img {
-    max-width: 700px;
-    width: 100%;
-    height: auto;
-    position: relative;
-    z-index: 1;
-}
+/* styling for slide header component */
 
 .section-header {
   font-size: 70px;
@@ -43,3 +37,48 @@ section {
     top: 0;
     z-index: 2;
   }
+
+/* styling for category cards */
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 16px;
+  max-width: 1080px;
+}
+
+.scroll-down__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 36px);
+}
+
+.scroll-down__message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.motion__wrapper {
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  gap: 24px;
+}
+
+.motion-box {
+  width: 100%;
+  max-width: 500px;
+  height: 420px;
+  border-radius: 8px;
+  /* background: #fff; */
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  background-color: white;
+}

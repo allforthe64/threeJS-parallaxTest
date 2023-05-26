@@ -7,7 +7,9 @@ export default function page(){
     <div>
       <p className='text-white text-2xl font-bold py-20 text-center'>Scroll down</p>
       <SlideHeader />
-      <Categories />
+      <div className="flex justify-center">
+        <Categories />
+      </div>
     </div>
   )
 }

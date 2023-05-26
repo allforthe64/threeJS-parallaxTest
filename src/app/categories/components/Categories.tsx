@@ -4,25 +4,6 @@ import { motion, MotionProps } from "framer-motion";
 
 import "../styles.css";
 
-const animation: MotionProps = {
-  variants: {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 },
-    slideStart: { clipPath: "inset(0 100% 0 0 round 8px)" },
-    slideEnd: { clipPath: "inset(0 0% 0 0 round 8px)" }
-  },
-  initial: ["hidden", "slideStart"],
-  whileInView: ["visible", "slideEnd"],
-  exit: ["hidden", "slideStart"],
-  viewport: {
-    amount: 0.4
-    // once: true
-  },
-  onViewportEnter: () => console.log("enter"),
-  onViewportLeave: () => console.log("leave"),
-  transition: { type: "spring", duration: 1, bounce: 0 }
-};
-
 const messageAnimation: MotionProps = {
   initial: { y: -64 },
   whileInView: { y: 0 },
@@ -38,12 +19,13 @@ const arrowAnimation: MotionProps = {
     // repeat: Infinity,
     repeatType: "mirror",
     duration: 1.5
-  }
+  },
+  onViewportEnter: () => console.log('arrow has entered')
 };
 
 export default function Categories() {
   return (
-    <div className="container">
+    <div className="container pb-[400px]">
       <h1>Scroll Triggered animation (whileInView)</h1>
       <div className="scroll-down__wrapper">
         <motion.div {...messageAnimation} className="scroll-down__message">
@@ -53,10 +35,16 @@ export default function Categories() {
           </motion.div>
         </motion.div>
       </div>
-      <div className="motion__wrapper">
-        {Array.from(Array(8).keys()).map((i) => (
-                <motion.div {...animation} key={i} className="motion-box"/>
-        ))}
+      <div className="space-y-[100px] flex flex-col items-center">
+        <div className="flex justify-start w-full">
+            <motion.div className="motion-box my-20" initial={{opacity: 0, x: -50}} whileInView={{opacity: 1, x: 50}} viewport={{amount: 0.4}}></motion.div>
+        </div>
+        <div className="flex justify-end w-full">
+            <motion.div className="motion-box my-20" initial={{opacity: 0, x: 50}} whileInView={{opacity: 1, x: -50}} viewport={{amount: 0.4}}></motion.div>
+        </div>
+        <div className="flex justify-start w-full">
+            <motion.div className="motion-box my-20" initial={{opacity: 0, x: 50}} whileInView={{opacity: 1, x: 50}} viewport={{amount: 0.4}}></motion.div>
+        </div>
       </div>
     </div>
   );

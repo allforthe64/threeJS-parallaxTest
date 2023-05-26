@@ -46,9 +46,7 @@ h2 {
 }
 
 .container {
-  margin: 0 auto;
-  padding: 0 16px;
-  max-width: 1080px;
+  max-width: 80%;
 }
 
 .scroll-down__wrapper {

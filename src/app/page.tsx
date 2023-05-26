@@ -9,6 +9,7 @@ export default function Home() {
       <Link href={'/framer'} className='hover:underline'>Framer Parallax</Link>
       <Link href={'/useScrollTut'} className='hover:underline'>Framer useScroll Tutorial</Link>
       <Link href={'/categories'} className='hover:underline'>Categories</Link>
+      <Link href={'/HIW'} className='hover:underline'>HIW</Link>
     </main>
   )
 }

@@ -5,13 +5,13 @@ import Categories from "./components/Categories"
 export default function page(){
 
   return (
-    <div>
-      <p className='text-white text-2xl font-bold py-20 text-center'>Scroll down</p>
+    <section>
+      <p className='text-white text-2xl font-bold py-[200px] text-center'>Scroll down</p>
       {/* <SlideHeader /> */}
       <FadeHeader />
       <div className="flex justify-center">
         <Categories />
       </div>
-    </div>
+    </section>
   )
 }

@@ -73,10 +73,6 @@ h2 {
 
 .motion-box {
   width: 100%;
-  max-width: 500px;
+  max-width: 80%;
   height: 420px;
-  border-radius: 8px;
-  /* background: #fff; */
-  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
-  background-color: white;
 }
